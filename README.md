@@ -1,6 +1,6 @@
 # speakyschool.project
 
-It's a project to develop my webdev skills
+It's a project to learn more HTML/CSS/JS
 
 # design
 
