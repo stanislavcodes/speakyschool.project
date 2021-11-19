@@ -1,6 +1,10 @@
 # speakyschool.project
 
-It's a project to learn more HTML/CSS/JS
+Language school website.
 
 # design
-original Figma design from: https://www.figma.com/file/JZZwl0rMrvDnSAQ92wkfhF/Speaky-school-Copy
+
+desiged by Arina Kobenyak | @arinkob
+instagram: https://www.instagram.com/arinkob/
+behance: https://www.behance.net/arinkob/
+linkedIn: https://www.linkedin.com/in/arina-kobenyak-b8583a197/
