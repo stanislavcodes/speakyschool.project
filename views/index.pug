@@ -1,0 +1,119 @@
+doctype html 
+html(lang="ua")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    // displays site properly based on user's device
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include includes/links-favicon.pug
+    include includes/links-fonts.pug
+    title Speaky School | Школа іноземних мов
+    include includes/links-assets.pug
+  body 
+    include includes/header.pug
+    main.content
+      section.section.section-hero
+        .section-hero__heading-box
+          h1
+            | ШКОЛА
+            br.break-heading-1
+            |
+            | іноземних
+            br
+            |
+            | мов для
+            br.break-heading-1
+            |
+            | всієї
+            br.break-heading-2
+            |
+            | сім'ї
+          button.btn.btn-trial Пробне заняття
+        figure.hero-illu-box
+          img(src="images/illustrations/hero.svg", alt="hero illustration")
+        .section-hero__link-box
+          a.section-hero__link.section-hero__link--adults(href="adults.html")
+            span.section-hero__link--span
+              span навчання
+              span дорослих
+          a.section-hero__link.section-hero__link--children(
+            href="children-online.html"
+          )
+            span.section-hero__link--span
+              span навчання
+              span дітей
+      include includes/can-learn.pug
+      section.section.section-why-speaky
+        .section-why-speaky__info
+          h2
+            span.text
+              | Чому speaky school?
+              span.bg
+          p.paragraph
+            | Щорічно наші учні успішно здають
+            br.break-heading-1
+            |
+            | міжнародні екзамени, вступають до
+            br.break-heading-1
+            |
+            | престижних українських та європейський
+            br.break-heading-1
+            |
+            | навчальних закладів.
+            br.break-heading-1
+            | В нашій школі навчаються діти й
+            br.break-heading-1
+            |
+            | батьки, школярі й дорослі,
+            br.break-heading-1
+            |
+            | бабусі й дідусі!
+        ul.section-why-speaky__list
+          li.section-why-speaky__item
+            img(src="/images/why-connection.svg", alt="teachers icon")
+            span
+              | Викладачі –
+              br
+              |
+              | носії мови
+          li.section-why-speaky__item
+            img(src="/images/why-search.svg", alt="search icon")
+            span
+              | Онлайн і офлайн
+              br
+              | заняття
+          li.section-why-speaky__item
+            img(src="/images/why-webinar.svg", alt="group of people icon")
+            span
+              | Індивідуальні
+              br
+              | 1 групові
+              br
+              | заняття
+        ul.section-why-speaky__list
+          li.section-why-speaky__item
+            img(src="/images/why-website.svg", alt="website icon")
+            span
+              | Всі заняття виключно
+              br
+              |
+              | обраною мовою
+          li.section-why-speaky__item
+            img(src="/images/why-online.svg", alt="reading icon")
+            span
+              | Персональна програма
+              br
+              |
+              | навчання
+          li.section-why-speaky__item
+            img(src="/images/why-graduate.svg", alt="graduation icon")
+            span
+              | Акредитація
+              br
+              |
+              | міжнародною
+              br
+              |
+              | організацією Edexel
+      section.section.section-sign-trial
+        form.sign-trial-form(action="")

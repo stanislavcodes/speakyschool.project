@@ -1,0 +1,97 @@
+@use "../utils" as *;
+:root {
+  --font-rale-light: "RalewayLight", sans-serif;
+  --font-rale-medium: "RalewayMedium", sans-serif;
+  --font-next-heavy: "NextHeavy", sans-serif;
+}
+
+body {
+  font-family: var(--font-rale-light);
+  // font-family: 'RalewayLight', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  letter-spacing: 0.02em;
+  font-family: var(--font-next-heavy);
+  font-style: normal;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: rem(50);
+  line-height: 132%;
+  font-feature-settings: "kern" off;
+
+  @include breakpoint-down(medium) {
+    font-size: rem(40);
+  }
+
+  @include breakpoint-down(medium-u1) {
+    font-size: rem(30);
+  }
+}
+
+h2 {
+  position: relative;
+  display: block;
+  z-index: 10;
+  .text {
+    font-feature-settings: "pnum" on, "lnum" on;
+    line-height: 142%;
+    font-size: rem(24);
+    letter-spacing: 0.02em;
+    position: inherit;
+
+    @include breakpoint-down(small) {
+      font-size: rem(20);
+    }
+  }
+
+  .bg {
+    position: absolute;
+    bottom: rem(4);
+    left: 0;
+    z-index: -1;
+    height: rem(10);
+    width: 100%;
+    background-color: var(--middle-yellow);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+p {
+  margin: 0;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 162%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.break-heading {
+  &-1 {
+    display: none;
+    @include breakpoint-down(small) {
+      display: inline;
+    }
+  }
+  &-2 {
+    display: inline;
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
+}

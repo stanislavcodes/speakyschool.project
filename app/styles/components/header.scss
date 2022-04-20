@@ -1,0 +1,13 @@
+@use "../utils" as *;
+
+.header {
+  width: 100%;
+  background-color: #fff;
+
+  @include breakpoint-down(small) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+}

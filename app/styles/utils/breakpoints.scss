@@ -6,10 +6,11 @@ $breakpoints-up: (
   "huge": "118.5em",
 );
 
-// 639px, 1149px, 1399px, 1899px
+// 639px, 859, 999px 1149px, 1399px, 1899px
 $breakpoints-down: (
   "small": "39.9375em",
-  "medium-u1": "53.6875em",
+  "medium-u1": "53.6875em", // custom
+  "medium-u2": "62.4375em", // custom
   "medium": "71.8125em",
   "large": "87.4375em",
   "huge": "118.6875em",

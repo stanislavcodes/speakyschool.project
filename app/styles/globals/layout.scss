@@ -1,0 +1,9 @@
+@use "../utils" as *;
+
+main {
+  z-index: -1; // for nav-mobile-content
+
+  @include breakpoint-down(small) {
+    padding-top: rem(120);
+  }
+}
